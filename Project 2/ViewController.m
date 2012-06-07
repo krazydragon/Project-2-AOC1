@@ -81,6 +81,38 @@
     }
     [self.view addSubview:summary];
     
+    summaryText = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 130.0f, 320.0f, 250.0f)];
+    if (publishedDate != nil)
+    {
+        summaryText.backgroundColor = [UIColor magentaColor];
+        summaryText.text = @"This book is the first of a series of books and a TV series on HBO True Blood. It all starts with Sookie Stackhouse from Bon Temps Louisiana. She is 25 years old and a mind reader. Most of the people from her very small town think that she is slow but she tries not to get involved with other people since she can read minds. This all changes when she meets a Vampire named Bill and she can’t read his mind the two hit it off. ";
+        summaryText.textAlignment = UITextAlignmentCenter;
+        summaryText.textColor = [UIColor greenColor];
+        summaryText.numberOfLines = 13;
+    }
+    [self.view addSubview:summaryText];
+    
+    //List of Items
+    
+    //Items for array
+    item1 = [[NSString alloc] initWithString:@"Vampires"];
+    item2 = [[NSString alloc] initWithString:@"Mind Reader"];
+    item3 = [[NSString alloc] initWithString:@"Super Natural"];
+    item4 = [[NSString alloc] initWithString:@"New age"];
+    item5 = [[NSString alloc] initWithString:@"Violence"];
+    //Create Array
+    itemArray = [[NSArray alloc] initWithObjects:item1,item2,item3,item4,item5,nil];
+    //Create Mutible String
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
